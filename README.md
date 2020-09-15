@@ -1,5 +1,5 @@
 # Algorithm Practice
-## Baseball Game
+## 01. [Baseball Game](https://github.com/JUNGYUN-Daegu/AlgorithmPractice/blob/master/%EC%95%BC%EA%B5%AC%EA%B2%8C%EC%9E%84/%EC%95%BC%EA%B5%AC%EA%B2%8C%EC%9E%84/main.swift)
 #### About
 1부터 9까지 서로 다른 수로 이루어진 3자리의 수를 맞추는 게임이다. 같은 수가 같은 자리에 있으면 스트라이크, 다른 자리에 있으면 볼, 같은 수가 전혀 없으면 포볼 또는 아웃이란 힌트를 얻고, 그 힌트를 이용해서 먼저 상대방의 수를 맞추면 승리.
 

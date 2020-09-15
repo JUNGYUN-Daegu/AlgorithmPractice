@@ -58,24 +58,27 @@ import Foundation
     }
 
     func resultShowing(strike:Int, ball:Int) -> String {
-        var strikeString:String = ""
-        var ballString:String = ""
+        var resultString:String = ""
         
-        if (strike > 0) {
-            strikeString = "\(strike) 스트라이크"
+        if strike > 0 {
+            resultString.append("\(strike) 스트라이크 ")
         }
         
-        if (ball > 0) {
-            ballString = "\(ball) 볼"
+        if ball > 0 {
+            resultString.append("\(ball) 볼")
         }
         
-        return ("\(strikeString) \(ballString)")
+        if (ball == 0 && strike == 0) {
+            resultString.append("아웃")
+        }
+        return resultString
     }
 
     func gamePlay() {
         let randomNumberArray = randomNumberArrayGenerator()
         var strike:Int
         var ball:Int
+        print(randomNumberArray)
         repeat {
             print("숫자를 입력해 주세요 ex)123 : ")
             let userAnswer = receiveUserAnswer()
